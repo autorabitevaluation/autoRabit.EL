@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ChexSystemsPasswordSuccessMessage</fullName>
+        <categories>ChexSystems</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Success Message Template</shortDescription>
+        <value>{2}The next expiration date is {0}. A reminder has been set up for your convenience for {1} days before the expiration.</value>
+    </labels>
+    <labels>
+        <fullName>ChexSystemsReminderCommentTemplate</fullName>
+        <categories>ChexSystems</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Expiration Reminder Comment Template</shortDescription>
+        <value>Please reset your ChexSystems password. This reminder is sent to you {0} days prior to its expiration. You can access the page here: {1}</value>
+    </labels>
+    <labels>
+        <fullName>ChexSystemsReminderInitialStatus</fullName>
+        <categories>ChexSystems</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Expiration Reminder Initial Status</shortDescription>
+        <value>Not Started</value>
+    </labels>
+    <labels>
+        <fullName>ChexSystemsReminderPriority</fullName>
+        <categories>ChexSystems</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Expiration Reminder Priority</shortDescription>
+        <value>High</value>
+    </labels>
+    <labels>
+        <fullName>ChexSystemsReminderSubject</fullName>
+        <categories>ChexSystems</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Expiration Reminder Subject</shortDescription>
+        <value>Reset ChexSystems Password</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Email_Template_Logo</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Email Template Logo</shortDescription>
+        <value>https://c.na135.content.force.com/servlet/servlet.ImageServer?id=0154S0000000u1Y&amp;oid=00D4S000000Emzh&amp;lastMod=1599235480000</value>
+    </labels>
+    <labels>
+        <fullName>Link_to_Portal_Dashboard</fullName>
+        <categories>Online Application</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Link to Portal Dashboard</shortDescription>
+        <value>Community URL</value>
+    </labels>
+    <labels>
+        <fullName>NewLine</fullName>
+        <categories>LoanAutoDecision ResultCard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewLine</shortDescription>
+        <value>&quot;
+
+&quot;</value>
+    </labels>
+    <labels>
+        <fullName>PendingBooking_Header_cm</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PendingBooking_Header_cm</shortDescription>
+        <value>Thank you for your application submission</value>
+    </labels>
+    <labels>
+        <fullName>PendingBooking_SubHeader_cm</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PendingBooking_SubHeader_cm</shortDescription>
+        <value>Please wait while we process your information. This page will re-load when we are ready for you to fund your account!</value>
+    </labels>
+    <labels>
+        <fullName>PendingCoOwnersHeader_cm</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PendingCoOwnersHeader_cm</shortDescription>
+        <value>We are currently waiting on your additional Account owners to submit their application.</value>
+    </labels>
+    <labels>
+        <fullName>PendingCoOwnersSubHeader_cm</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PendingCoOwnersSubHeader_cm</shortDescription>
+        <value>Once they have successfully submitted their application, you will receive an email with instructions to complete the application. If you have any questions please contact us at 123-456-7890. Thank you!</value>
+    </labels>
+    <labels>
+        <fullName>PortalPendingBusinessInfoHeader1_cm</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PortalPendingBusinessInfoHeader1</shortDescription>
+        <value>Thank you for submitting your application,</value>
+    </labels>
+    <labels>
+        <fullName>PortalPendingBusinessInfoSubHeader2_cm</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PortalPendingBusinessInfoSubHeader2</shortDescription>
+        <value>We are currently processing your information. A member from our customer care team will reach out within 1-2 business days. If you have any questions, please feel free to contact us at 123-456-6789 or email contactCenter@bank.com. Thanks!</value>
+    </labels>
+    <labels>
+        <fullName>X_MISSING_REQUIRED_PROPERTY</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Missing Equifax configured property</shortDescription>
+        <value>Missing Equifax configured property</value>
+    </labels>
+    <labels>
+        <fullName>X_MISSING_UNKNOWN_REPORT_TYPE</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unknown Report Type</shortDescription>
+        <value>Unknown Report Type</value>
+    </labels>
+    <labels>
+        <fullName>X_PRODUCT_LIMIT_EXCEEDED</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>More than the 5 allowable Equifax Business products have been selected.</shortDescription>
+        <value>More than the 5 allowable Equifax Business products have been selected, please update the product selections within the plugin configuration.</value>
+    </labels>
+    <labels>
+        <fullName>X_USERINFO_QUERY_FAILED</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Failed to query user info</shortDescription>
+        <value>Failed to query user info</value>
+    </labels>
+    <labels>
+        <fullName>cm_Needs_Review_Text</fullName>
+        <categories>ODAO Accelerate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Needs Review Text</shortDescription>
+        <value>A member from our care team will contact you within 1-2 business days. If you have any questions please feel free to contact us at 123-456-7890. Thank you!</value>
+    </labels>
+</CustomLabels>

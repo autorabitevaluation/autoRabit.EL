@@ -1,0 +1,42 @@
+<apex:page docType="html-5.0"
+    sidebar="false"
+    showHeader="false"
+    standardStylesheets="false"
+    applyHtmlTag="false"
+    applyBodyTag="false"
+    standardController="LLC_BI__Application__c"
+    >
+    <html class="portal-html" lang="en"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <head>    
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        </head>
+        <body class="slds" ng-app="onlineAppApp" ng-cloak="true"> 
+        <div style="text-align:center;">
+            <route>
+              <p class="portal-center-text slds-text-heading--medium slds-m-top--large"  >{!$Label.PendingCoOwnersHeader_cm}                      
+               </p>
+              <p style="font-size: 17px" > <br /> {!$Label.PendingCoOwnersSubHeader_cm} </p>  
+              <br /> 
+              
+             <br />  
+              <br />  
+                                                <a style="width: 75%; background-color: white; color: #093266; padding-left: 16px; padding-right: 16px; margin-bottom:10px; border: 1px solid #d8dde6; border-radius: 4px; line-height: 30px; display: inline-block; text-decoration: none;"
+                                                   href="{!URLFOR($Page.nPortal__Portal)}">
+                                                    Back to Dashboard
+                                                </a>
+                                       <br />
+                    <a style="padding-left: 16px; padding-right: 16px; margin-top:10px; display: inline-block; text-decoration: none;" href="{!$Site.Prefix}/secur/logout.jsp">
+    Or Logout
+</a>
+                                               <br /> 
+                     <!-->  
+                    <a href="{!$Site.Prefix}/secur/logout.jsp">
+    Logout
+</a><!-->
+            </route>
+            </div>
+        </body>
+    </html>
+    </apex:page>

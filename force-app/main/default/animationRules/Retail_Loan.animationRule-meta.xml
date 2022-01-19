@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>rarely</animationFrequency>
+    <developerName>Retail_Loan</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Retail Loan</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>Retail_Loan</recordTypeName>
+    <sobjectType>LLC_BI__Loan__c</sobjectType>
+    <targetField>LLC_BI__Stage__c</targetField>
+    <targetFieldChangeToValues>Complete</targetFieldChangeToValues>
+</AnimationRule>

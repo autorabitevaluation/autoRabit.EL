@@ -1,0 +1,1650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Deposit_Successfull_Account_Opening_Email</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_19_A1</name>
+        <label>Email Alert- Successful Account Opening</label>
+        <locationX>1900</locationX>
+        <locationY>200</locationY>
+        <actionName>LLC_BI__Deposit__c.Deposit_Successfull_Account_Opening_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>Chexsystems- Deposit Declination</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_21_A1</name>
+        <label>Launch Declination Flow</label>
+        <locationX>2100</locationX>
+        <locationY>200</locationY>
+        <actionName>Chexsystems_Deposit_Declination</actionName>
+        <actionType>flow</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>var_Depositid</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>var_Depositid</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>User No WF = true</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision16</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_pmetdec</targetReference>
+            </connector>
+            <label>Product is not CD</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision16</name>
+        <label>myDecision16</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision18</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_17</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_17</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_17_A1</targetReference>
+            </connector>
+            <label>Status = Needs Review (from booking failure</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision18</name>
+        <label>myDecision18</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision20</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_19</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_19</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_19_A1</targetReference>
+            </connector>
+            <label>OA- Status Changed from In-Progress to Open</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_pmetdec</targetReference>
+            </connector>
+            <label>Deposit Created- set FI signer &amp; open date default</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision20</name>
+        <label>myDecision20</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_21</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_pmetdec</targetReference>
+            </connector>
+            <label>Manual Declination</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision9</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>Product OR Act. Number Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision9</name>
+        <label>myDecision9</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_10</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_10</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_10_pmetdec</targetReference>
+            </connector>
+            <label>Default Maturity Date?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_10_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1000</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_10_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_10_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_10_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_10_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_10_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision14</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_15_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_15_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_15_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision16</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_21_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>2100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_21_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_21_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_21_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_3_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_3_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_3_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision6</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <description>Actions on Deposit Record (Create/Edit)</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c].LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__CD_Term__c </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_11_myRule_10_A1_5306229584</name>
+        <dataType>String</dataType>
+        <expression>{!myVariable_current.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__CD_Term__c}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Product_Term_Type__c ) = &apos;Month(s)&apos;,
+
+ADDMONTHS([LLC_BI__Deposit__c].LLC_BI__Open_Date__c ,
+
+VALUE([LLC_BI__Deposit__c].LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__CD_Term__c )),
+
+IF(TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Product_Term_Type__c ) = &apos;Day(s)&apos;, 
+
+[LLC_BI__Deposit__c].LLC_BI__Open_Date__c  + VALUE([LLC_BI__Deposit__c].LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__CD_Term__c ), null
+
+))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_12_myRule_10_A1_2619992127</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+
+TEXT({!myVariable_current.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Product_Term_Type__c} ) = &apos;Month(s)&apos;,
+
+ADDMONTHS({!myVariable_current.LLC_BI__Open_Date__c} ,
+
+VALUE({!myVariable_current.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__CD_Term__c} )),
+
+IF(TEXT({!myVariable_current.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Product_Term_Type__c} ) = &apos;Day(s)&apos;, 
+
+{!myVariable_current.LLC_BI__Open_Date__c}  + VALUE({!myVariable_current.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__CD_Term__c} ), null
+
+))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Product_Term_Type__c )</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_13_myRule_10_A1_8361793557</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!myVariable_current.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Product_Term_Type__c} )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>date(year(datevalue([LLC_BI__Deposit__c].CreatedDate  )),month(datevalue([LLC_BI__Deposit__c].CreatedDate)),day(datevalue([LLC_BI__Deposit__c].CreatedDate-4/24)))
+
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_4_myRule_3_A2_4814227569</name>
+        <dataType>Date</dataType>
+        <expression>date(year(datevalue({!myVariable_current.CreatedDate}  )),month(datevalue({!myVariable_current.CreatedDate})),day(datevalue({!myVariable_current.CreatedDate}-4/24)))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF([LLC_BI__Deposit__c].CreatedBy.Profile.Name != &apos;nCino Community User&apos;, [LLC_BI__Deposit__c].CreatedById, &apos;&apos;)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_5_myRule_3_A1_0170505618</name>
+        <dataType>String</dataType>
+        <expression>IF({!myVariable_current.CreatedBy.Profile.Name} != &apos;nCino Community User&apos;, {!myVariable_current.CreatedById}, &apos;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(
+
+ISBLANK([LLC_BI__Deposit__c].LLC_BI__Account_Number__c),
+
+[LLC_BI__Deposit__c].LLC_BI__Account__r.Name   &amp; &apos; - &apos; 
+&amp; TEXT([LLC_BI__Deposit__c].LLC_BI__Product__c),
+
+[LLC_BI__Deposit__c].LLC_BI__Account__r.Name  &amp; &apos; - &apos; 
+&amp; TEXT([LLC_BI__Deposit__c].LLC_BI__Product__c)&amp; &apos; - &apos; 
+&amp; [LLC_BI__Deposit__c].LLC_BI__Account_Number__c
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_8_myRule_7_A1_9244677959</name>
+        <dataType>String</dataType>
+        <expression>IF(
+
+ISBLANK({!myVariable_current.LLC_BI__Account_Number__c}),
+
+{!myVariable_current.LLC_BI__Account__r.Name}   &amp; &apos; - &apos; 
+&amp; TEXT({!myVariable_current.LLC_BI__Product__c}),
+
+{!myVariable_current.LLC_BI__Account__r.Name}  &amp; &apos; - &apos; 
+&amp; TEXT({!myVariable_current.LLC_BI__Product__c})&amp; &apos; - &apos; 
+&amp; {!myVariable_current.LLC_BI__Account_Number__c}
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>$User.No_Workflow__c  = TRUE</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$User.00N4S000001bzQe}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND
+($User.No_Workflow__c = false,
+OR(ISNEW(),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Open_Date__c)),
+NOT(ISBLANK([LLC_BI__Deposit__c].LLC_BI__Product_Reference__c.LLC_BI__Product_Feature__c.LLC_BI__CD_Term__c))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_10</name>
+        <dataType>Boolean</dataType>
+        <expression>AND
+({!$User.00N4S000001bzQe}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND
+($User.No_Workflow__c = false,
+OR(ISNEW(),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Open_Date__c)),
+NOT(ISBLANK([LLC_BI__Deposit__c].LLC_BI__Product_Reference__c.LLC_BI__Product_Feature__c.LLC_BI__CD_Term__c))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_10_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND
+({!$User.00N4S000001bzQe}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Type__c ) = &apos;Checking&apos;,
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Type__c ) = &apos;Savings&apos;,
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Type__c ) = &apos;IRA&apos;
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+
+TEXT({!myVariable_current.LLC_BI__Product_Type__c} ) = &apos;Checking&apos;,
+
+TEXT({!myVariable_current.LLC_BI__Product_Type__c} ) = &apos;Savings&apos;,
+
+TEXT({!myVariable_current.LLC_BI__Product_Type__c} ) = &apos;IRA&apos;
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Type__c ) = &apos;Checking&apos;,
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Type__c ) = &apos;Savings&apos;,
+
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product_Type__c ) = &apos;IRA&apos;
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+
+TEXT({!myVariable_old.LLC_BI__Product_Type__c} ) = &apos;Checking&apos;,
+
+TEXT({!myVariable_old.LLC_BI__Product_Type__c} ) = &apos;Savings&apos;,
+
+TEXT({!myVariable_old.LLC_BI__Product_Type__c} ) = &apos;IRA&apos;
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+
+ISPICKVAL([LLC_BI__Deposit__c].LLC_BI__Status__c ,&apos;NEEDS REVIEW&apos;)
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_17</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+
+ISPICKVAL({!myVariable_current.LLC_BI__Status__c} ,&apos;NEEDS REVIEW&apos;)
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+
+NOT(ISBLANK([LLC_BI__Deposit__c].LLC_BI__Application__c)),
+
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Status__c),
+
+ISPICKVAL([LLC_BI__Deposit__c].LLC_BI__Status__c, &apos;Ready for Funding&apos;)
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_19</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+
+NOT(ISBLANK({!myVariable_current.LLC_BI__Application__c})),
+
+ISCHANGED({!myVariable_current.LLC_BI__Status__c}),
+
+ISPICKVAL({!myVariable_current.LLC_BI__Status__c}, &apos;Ready for Funding&apos;)
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+$Profile.Name != &apos;nCino Community User&apos;,
+$User.No_Workflow__c = false,
+NOT(ISBLANK([LLC_BI__Deposit__c].LLC_BI__Application__c)),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Status__c),
+ISPICKVAL([LLC_BI__Deposit__c].LLC_BI__Status__c, &apos;Declined&apos;))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_21</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!$Profile.Name} != &apos;nCino Community User&apos;,
+$Profile.Name{!ID:$User.00N4S000001bzQe</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+$Profile.Name != &apos;nCino Community User&apos;,
+$User.No_Workflow__c = false,
+NOT(ISBLANK([LLC_BI__Deposit__c].LLC_BI__Application__c)),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Status__c),
+ISPICKVAL([LLC_BI__Deposit__c].LLC_BI__Status__c, &apos;Declined&apos;))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_21_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!$Profile.Name} != &apos;nCino Community User&apos;,
+$Profile.Name{!ID:$User.00N4S000001bzQe</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+
+$User.No_Workflow__c = false,
+
+NOT(ISBLANK([LLC_BI__Deposit__c].CreatedById ))
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+
+{!$User.00N4S000001bzQe}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+
+$User.No_Workflow__c = false,
+
+NOT(ISBLANK([LLC_BI__Deposit__c].CreatedById ))
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+
+{!$User.00N4S000001bzQe}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>OR(
+ISNEW(),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Account__c),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Product__c),
+ISCHANGED([LLC_BI__Deposit__c].LLC_BI__Account_Number__c),
+TEXT([LLC_BI__Deposit__c].LLC_BI__Product__c ) = &apos;Tax Favored Account Plan&apos;
+
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+ISNEW(),
+ISCHANGED({!myVariable_current.LLC_BI__Account__c}),
+ISCHANGED({!myVariable_current.LLC_BI__Product__c}),
+ISCHANGED({!myVariable_current.LLC_BI__Account_Number__c}),
+TEXT({!myVariable_current.LLC_BI__Product__c} ) = &apos;Tax Favored Account Plan&apos;
+
+)</expression>
+    </formulas>
+    <interviewLabel>Deposit_Automation-18_InterviewLabel</interviewLabel>
+    <label>Deposit Automation</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>LLC_BI__Deposit__c</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_10_A1</name>
+        <label>Populate Maturity Date</label>
+        <locationX>1000</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision14</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>CD Term</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__CD_Term__c</field>
+            <value>
+                <elementReference>formula_11_myRule_10_A1_5306229584</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Maturity Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Maturity_Date__c</field>
+            <value>
+                <elementReference>formula_12_myRule_10_A1_2619992127</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Term Type</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Term_Type__c</field>
+            <value>
+                <elementReference>formula_13_myRule_10_A1_8361793557</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>Update interest payment method type</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision16</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Interest Payment Method Type</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Interest_Payment_Method_Type__c</field>
+            <value>
+                <stringValue>Add Back Interest</stringValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_17_A1</name>
+        <label>Update Status to Booking Failure</label>
+        <locationX>1700</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision18</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>Booking Failure</stringValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>criteria</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Do Nothing</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>inputDataType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Created Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideType</name>
+                <value>
+                    <stringValue>DateTime</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>operatorDataType</name>
+                <value>
+                    <stringValue>DateTime</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>CreatedDate</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Deposit Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Name</field>
+            <value>
+                <stringValue>xx</stringValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Default FI auth signer, User created</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_3_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Financial Institution Authorized Signer</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>User</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Financial_Institution_Authorized_Signer__c</field>
+            <value>
+                <elementReference>formula_5_myRule_3_A1_0170505618</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>criteria</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_3_A2</name>
+        <label>Default Open Date</label>
+        <locationX>300</locationX>
+        <locationY>300</locationY>
+        <connector>
+            <targetReference>myDecision6</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>inputDataType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Open Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>operatorDataType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Open_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Open Date</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Open_Date__c</field>
+            <value>
+                <elementReference>formula_4_myRule_3_A2_4814227569</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[LLC_BI__Deposit__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>Update Deposit Name w/out Account Number</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision9</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Deposit Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Name</field>
+            <value>
+                <elementReference>formula_8_myRule_7_A1_9244677959</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Deposit__c</object>
+    </recordUpdates>
+    <startElementReference>myDecision</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Deposit__c</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>LLC_BI__Deposit__c</objectType>
+    </variables>
+</Flow>

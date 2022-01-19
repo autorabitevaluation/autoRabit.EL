@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningExperienceTheme xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultBrandingSet>LEXTHEMINGnSightFinancialDEMO</defaultBrandingSet>
+    <masterLabel>nSight Financial - DEMO</masterLabel>
+    <shouldOverrideLoadingImage>false</shouldOverrideLoadingImage>
+</LightningExperienceTheme>

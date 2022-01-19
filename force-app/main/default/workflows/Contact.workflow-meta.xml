@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Deposit_Declined</fullName>
+        <description>Deposit- Declined</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>lauren.esham@ncino.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>LLC_BI__Bankr_Templates/Deposit_Account_Notice_of_Adverse_Action</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>LLC_BI__Set_Contact_Business_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>LLC_BI__Business_Contact</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set Contact Business Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LLC_BI__Set_Contact_Individual_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>LLC_BI__Individual_Contact</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set Contact Individual Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_Contact_City</fullName>
+        <field>MailingCity</field>
+        <formula>LLC_BI__Home_City__c</formula>
+        <name>Sync Contact City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_Contact_State</fullName>
+        <field>MailingState</field>
+        <formula>CASE(LLC_BI__Home_State__c,&apos;AL&apos;,&apos;Alabama&apos;, 
+
+&apos;AK&apos;,&apos;Alaska&apos;, 
+
+&apos;AZ&apos;,&apos;Arizona&apos;, 
+
+&apos;AR&apos;,&apos;Arkansas&apos;, 
+
+&apos;CA&apos;,&apos;California&apos;, 
+
+&apos;CO&apos;,&apos;Colorado&apos;, 
+
+&apos;CT&apos;,&apos;Connecticut&apos;, 
+
+&apos;DE&apos;,&apos;Delaware&apos;, 
+
+&apos;FL&apos;,&apos;Florida&apos;, 
+
+&apos;GA&apos;,&apos;Georgia&apos;, 
+
+&apos;HI&apos;,&apos;Hawaii&apos;, 
+
+&apos;ID&apos;,&apos;Idaho&apos;, 
+
+&apos;IL&apos;,&apos;Illinois&apos;, 
+
+&apos;IN&apos;,&apos;Indiana&apos;, 
+
+&apos;IA&apos;,&apos;Iowa&apos;, 
+
+&apos;KS&apos;,&apos;Kansas&apos;, 
+
+&apos;KY&apos;,&apos;Kentucky&apos;, 
+
+&apos;LA&apos;,&apos;Louisiana&apos;, 
+
+&apos;ME&apos;,&apos;Maine&apos;, 
+
+&apos;MD&apos;,&apos;Maryland&apos;, 
+
+&apos;MA&apos;,&apos;Massachusetts&apos;, 
+
+&apos;MI&apos;,&apos;Michigan&apos;, 
+
+&apos;MN&apos;,&apos;Minnesota&apos;, 
+
+&apos;MS&apos;,&apos;Mississippi&apos;, 
+
+&apos;MO&apos;,&apos;Missouri&apos;, 
+
+&apos;MT&apos;,&apos;Montana&apos;, 
+
+&apos;NE&apos;,&apos;Nebraska&apos;, 
+
+&apos;NV&apos;,&apos;Nevada&apos;, 
+
+&apos;NH&apos;,&apos;New Hampshire&apos;, 
+
+&apos;NJ&apos;,&apos;New Jersey&apos;, 
+
+&apos;NM&apos;,&apos;New Mexico&apos;, 
+
+&apos;NY&apos;,&apos;New York&apos;, 
+
+&apos;NC&apos;,&apos;North Carolina&apos;, 
+
+&apos;ND&apos;,&apos;North Dakota&apos;, 
+
+&apos;OH&apos;,&apos;Ohio&apos;, 
+
+&apos;OK&apos;,&apos;Oklahoma&apos;, 
+
+&apos;OR&apos;,&apos;Oregon&apos;, 
+
+&apos;PA&apos;,&apos;Pennsylvania&apos;, 
+
+&apos;RI&apos;,&apos;Rhode Island&apos;, 
+
+&apos;SC&apos;,&apos;South Carolina&apos;, 
+
+&apos;SD&apos;,&apos;South Dakota&apos;, 
+
+&apos;TN&apos;,&apos;Tennessee&apos;, 
+
+&apos;TX&apos;,&apos;Texas&apos;, 
+
+&apos;UT&apos;,&apos;Utah&apos;, 
+
+&apos;VT&apos;,&apos;Vermont&apos;, 
+
+&apos;VA&apos;,&apos;Virginia&apos;, 
+
+&apos;WA&apos;,&apos;Washington&apos;, 
+
+&apos;WV&apos;,&apos;West Virginia&apos;, 
+
+&apos;WI&apos;,&apos;Wisconsin&apos;, 
+
+&apos;WY&apos;,&apos;Wyoming&apos;, 
+
+&apos;Other&apos;)</formula>
+        <name>Sync Contact State</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_Contact_Street</fullName>
+        <field>MailingStreet</field>
+        <formula>LLC_BI__Home_Address__c</formula>
+        <name>Sync Contact Street</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_Contact_Zip</fullName>
+        <field>MailingPostalCode</field>
+        <formula>LLC_BI__Home_Zipcode__c</formula>
+        <name>Sync Contact Zip</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contact- Mailing Address Sync</fullName>
+        <actions>
+            <name>Sync_Contact_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Sync_Contact_State</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Sync_Contact_Street</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Sync_Contact_Zip</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISPICKVAL(cm_Mailing_Same_as_Physical__c, &apos;Yes&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LLC_BI__Contact Set Business Record Type</fullName>
+        <actions>
+            <name>LLC_BI__Set_Contact_Business_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.LLC_BI__Primary_Contact__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>sets Record Type to Business if Contact is not marked as primary</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LLC_BI__Contact Set Individual Record Type</fullName>
+        <actions>
+            <name>LLC_BI__Set_Contact_Individual_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.LLC_BI__Primary_Contact__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>sets Record Type to Individual if Contact is marked as primary</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>This flow automatically launches via process builder when a nCino Community User is created. It assigns the two necessary permissions needed to fund a deposit account:
+
+MAGICW - Run
+SFOC Customer Interaction - Run</description>
+    <masterLabel>MagicWrighter - Assign Community User Permissions</masterLabel>
+</FlowDefinition>

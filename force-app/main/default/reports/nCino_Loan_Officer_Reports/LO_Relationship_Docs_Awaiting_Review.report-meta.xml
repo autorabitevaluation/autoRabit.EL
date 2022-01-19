@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LLC_BI__AccountDocument__c$Name</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__AccountDocument__c$LLC_BI__Portal_Doc_Name__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__AccountDocument__c$LLC_BI__Portal_Doc_Description__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__AccountDocument__c$LLC_BI__date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__AccountDocument__c$LLC_BI__reviewStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Awaiting Review</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__AccountDocument__c$LLC_BI__Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__AccountDocument__c$LLC_BI__reviewStatus__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>LO - Relationship Docs Awaiting Review</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>nPortal__Account_Documents__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__AccountDocument__c$LLC_BI__approvalDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

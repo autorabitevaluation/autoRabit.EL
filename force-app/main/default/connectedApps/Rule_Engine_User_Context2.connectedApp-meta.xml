@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>daniel.price@ncino.com</contactEmail>
+    <label>Rule Engine User Context2</label>
+    <oauthConfig>
+        <callbackUrl>https://arretailpocfbrorg5--llc-bi.na163.visual.force.com/apex/llc_bi__admin?app=admin.ruleengineoauth2</callbackUrl>
+        <consumerKey>3MVG9p1Q1BCe9GmBuXy6sNW3GlTTs7bCvQu29HYIrmyiXr4gVNEkrw8vG57l0SHzbOUYAUBiZYMi8_EXOhbxb</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

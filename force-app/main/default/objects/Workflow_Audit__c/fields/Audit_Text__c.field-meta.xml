@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Text__c</fullName>
+    <description>The system populates this optional rich text field to store workflow audit text.  By default, it is null.</description>
+    <externalId>false</externalId>
+    <label>Audit Text</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

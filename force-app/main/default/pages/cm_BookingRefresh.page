@@ -1,0 +1,60 @@
+<apex:page docType="html-5.0"
+    sidebar="false"
+    showHeader="false"
+    standardStylesheets="false"
+    applyHtmlTag="false"
+    applyBodyTag="false"
+    standardController="LLC_BI__Application__c">
+    <html class="portal-html" lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <head>    
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1"  />
+            
+        </head>
+        <body class="slds" ng-app="onlineAppApp" ng-cloak="true"> 
+        
+        <script>
+            setTimeout(function() {
+            location.reload();
+        }, 20000);
+        </script>
+        <div style="text-align:center;">
+            <route>
+            <p class="portal-center-text slds-text-heading--medium slds-m-top--large"> {!$Label.PendingBooking_Header_cm}, {!$User.FirstName}. {!$Label.PendingBooking_SubHeader_cm}</p>
+            <!--><p style="font-size: 17px"><br/>{!$Label.PendingBooking_1} {!$Label.PendingBooking_2}</p><!-->  
+            <br/> 
+            <br/>  
+            <br/> 
+            <br/> 
+            <br/>  
+        <apex:outputPanel >
+           
+            <img src="https://c.na135.content.force.com/servlet/servlet.ImageServer?id=0155f000001dmaW&oid=00D5f000005xMK8&lastMod=1597426192000" width="90" height="90" />
+            <br/>
+            <br/>
+            <!--><p/><apex:outputLabel value="Processing your request..."/><!-->
+        </apex:outputPanel>
+           
+        
+            <br/> 
+            <br/>  
+            <br/>  
+            <br/> 
+            <br/>  
+              <!-->  
+            <a style="width: 75%; background-color: #FFC845; color: Black; padding-left: 16px; padding-right: 16px; margin-bottom:10px; border: 1px solid #FFC845; border-radius: 1px; line-height: 30px; display: inline-block; text-decoration: none;" href="{!$Site.Prefix}">
+                Back to Dashboard
+            </a>
+            <br />
+            <a style="padding-left: 16px; padding-right: 16px; margin-top:10px; display: inline-block; text-decoration: none;" href="{!$Site.Prefix}/secur/logout.jsp">
+                Or Logout
+            </a>
+            <br /> 
+            <a href="{!$Site.Prefix}/secur/logout.jsp">
+            Logout
+            </a><!-->
+            </route>
+            </div>
+        </body>
+    </html>
+</apex:page>

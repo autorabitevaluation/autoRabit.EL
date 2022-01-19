@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>This flow automatically launches via process builder when a nCino Community User is created. It assigns the two necessary permissions needed to fund a deposit account:
+
+MAGICW - Run
+SFOC Customer Interaction - Run</description>
+    <interviewLabel>MW - Assign Community User Permissions {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MW - Assign Community User Permissions</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Assigns the MAGICW_Run permission set to the newly created community user so that they can successfully fund their account.</description>
+        <name>Assign_MAGICW_Run_Permission</name>
+        <label>Assign MAGICW_Run Permission</label>
+        <locationX>418</locationX>
+        <locationY>244</locationY>
+        <connector>
+            <targetReference>Get_SFOC_Customer_Interaction_Run</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AssigneeId</field>
+            <value>
+                <elementReference>UserID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PermissionSetId</field>
+            <value>
+                <elementReference>Get_MAGICW_Run_Permission_Set.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PermissionSetAssignment</object>
+    </recordCreates>
+    <recordCreates>
+        <description>Assigns SFOC Customer Interaction - Run to the Community User Created.</description>
+        <name>SFOC_Customer_Interaction_Run</name>
+        <label>SFOC Customer Interaction - Run</label>
+        <locationX>675</locationX>
+        <locationY>362</locationY>
+        <inputAssignments>
+            <field>AssigneeId</field>
+            <value>
+                <elementReference>UserID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PermissionSetId</field>
+            <value>
+                <elementReference>Get_SFOC_Customer_Interaction_Run.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PermissionSetAssignment</object>
+    </recordCreates>
+    <recordLookups>
+        <description>Get&apos;s the MAGICW - Run Permission Set Id</description>
+        <name>Get_MAGICW_Run_Permission_Set</name>
+        <label>Get MAGICW - Run Permission Set</label>
+        <locationX>413</locationX>
+        <locationY>88</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_MAGICW_Run_Permission</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>MAGICW_run</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSet</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the permission set Id for SFOC Customer Interaction - Run</description>
+        <name>Get_SFOC_Customer_Interaction_Run</name>
+        <label>Get SFOC Customer Interaction - Run</label>
+        <locationX>480</locationX>
+        <locationY>396</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SFOC_Customer_Interaction_Run</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CustomerInteraction_run</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSet</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_MAGICW_Run_Permission_Set</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>UserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

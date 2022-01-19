@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Allow</actionOnInsert>
+    <actionOnUpdate>Allow</actionOnUpdate>
+    <alertText xsi:nil="true"/>
+    <description xsi:nil="true"/>
+    <duplicateRuleFilter>
+        <booleanFilter xsi:nil="true"/>
+        <duplicateRuleFilterItems>
+            <field>LLC_BI__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Declined, Charge-Off, Paid Out, Withdrawn</value>
+            <sortOrder>1</sortOrder>
+            <table>LLC_BI__Loan__c</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Booked</value>
+            <sortOrder>2</sortOrder>
+            <table>LLC_BI__Loan__c</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>LLC_BI__Product_Line__c</field>
+            <operation>equals</operation>
+            <value>Consumer</value>
+            <sortOrder>3</sortOrder>
+            <table>LLC_BI__Loan__c</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>LLC_BI__Loan__c</matchRuleSObjectType>
+        <matchingRule>Duplicate_Product_Applications</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Duplicate Consumer Loan Product Line Applications</masterLabel>
+    <operationsOnInsert>Report</operationsOnInsert>
+    <operationsOnUpdate>Report</operationsOnUpdate>
+    <securityOption>BypassSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

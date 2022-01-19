@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OA_Drivers_License</fullName>
+    <description>Personal Info - OA - Drivers License/State ID information</description>
+    <displayedFields>
+        <field>LLC_BI__Drivers_License__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Primary_ID_Issuing_State__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Primary_ID_Issue_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Primary_ID_Expiration_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>OA_Drivers_License</label>
+</FieldSet>
