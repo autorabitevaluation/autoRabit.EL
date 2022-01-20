@@ -2542,6 +2542,7 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>AutoRabit</members>
         <members>ChexSystemsPasswordSuccessMessage</members>
         <members>ChexSystemsReminderCommentTemplate</members>
         <members>ChexSystemsReminderInitialStatus</members>
@@ -2556,7 +2557,6 @@
         <members>PendingCoOwnersSubHeader_cm</members>
         <members>PortalPendingBusinessInfoHeader1_cm</members>
         <members>PortalPendingBusinessInfoSubHeader2_cm</members>
-        <members>Test</members>
         <members>X_MISSING_REQUIRED_PROPERTY</members>
         <members>X_MISSING_UNKNOWN_REPORT_TYPE</members>
         <members>X_PRODUCT_LIMIT_EXCEEDED</members>
