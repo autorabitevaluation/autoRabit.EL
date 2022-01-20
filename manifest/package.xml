@@ -2556,6 +2556,7 @@
         <members>PendingCoOwnersSubHeader_cm</members>
         <members>PortalPendingBusinessInfoHeader1_cm</members>
         <members>PortalPendingBusinessInfoSubHeader2_cm</members>
+        <members>Test</members>
         <members>X_MISSING_REQUIRED_PROPERTY</members>
         <members>X_MISSING_UNKNOWN_REPORT_TYPE</members>
         <members>X_PRODUCT_LIMIT_EXCEEDED</members>
@@ -4944,6 +4945,7 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>Account.zipcode_change_for_AutoRabit</members>
         <members>Contact.Deposit_Declined</members>
         <members>Opportunity.LLC_BI__Close_Date_Moved</members>
         <members>Opportunity.LLC_BI__Guarantee_Fee_Not_Paid</members>
@@ -4987,6 +4989,7 @@
         <members>Account.LLC_BI__Account Set Lender Record Type</members>
         <members>Account.LLC_BI__Set Default App for Lenders</members>
         <members>Account.Set Default App-Master Relationship</members>
+        <members>Account.Test for AutoRabit</members>
         <members>Contact.Contact- Mailing Address Sync</members>
         <members>Contact.LLC_BI__Contact Set Business Record Type</members>
         <members>Contact.LLC_BI__Contact Set Individual Record Type</members>
