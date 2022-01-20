@@ -62,9 +62,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>NewLine</shortDescription>
-        <value>&quot;
-
-&quot;</value>
+        <value>&quot;</value>
     </labels>
     <labels>
         <fullName>PendingBooking_Header_cm</fullName>
