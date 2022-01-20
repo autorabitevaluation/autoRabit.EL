@@ -115,6 +115,13 @@
         <value>We are currently processing your information. A member from our customer care team will reach out within 1-2 business days. If you have any questions, please feel free to contact us at 123-456-6789 or email contactCenter@bank.com. Thanks!</value>
     </labels>
     <labels>
+        <fullName>Test</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Test</shortDescription>
+        <value>NONE</value>
+    </labels>
+    <labels>
         <fullName>X_MISSING_REQUIRED_PROPERTY</fullName>
         <categories>Equifax</categories>
         <language>en_US</language>
