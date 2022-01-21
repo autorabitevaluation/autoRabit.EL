@@ -1,10 +1,10 @@
 global with sharing virtual class EquifaxCalloutBase {
 
     /**
-    * Request Credit Report Input Parameter values
+    * Request Credit Report Input Parameter values - Testing the build
     */
     global class EquifaxCalloutInputParams {
-        
+        /* Re build*/
         /**
         * The requesting loan Id
         */
