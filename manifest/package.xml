@@ -6,6 +6,7 @@
         <name>AnimationRule</name>
     </types>
     <types>
+        <members>ATBK__ApplicationBookingStrategy</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
         <members>ChexSystemsGeneratePasswordController</members>
@@ -105,6 +106,7 @@
         <name>ApexEmailNotifications</name>
     </types>
     <types>
+        <members>ATBK__Labels</members>
         <members>AnswersHome</members>
         <members>BandwidthExceeded</members>
         <members>ChangePassword</members>
