@@ -2548,6 +2548,7 @@
         <members>ChexSystemsReminderPriority</members>
         <members>ChexSystemsReminderSubject</members>
         <members>Custom_Email_Template_Logo</members>
+        <members>FRB_Test</members>
         <members>Link_to_Portal_Dashboard</members>
         <members>NewLine</members>
         <members>PendingBooking_Header_cm</members>
