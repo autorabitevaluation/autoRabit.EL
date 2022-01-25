@@ -6,6 +6,7 @@
         <name>AnimationRule</name>
     </types>
     <types>
+        <members>ATBK__ApplicationBookingStrategy</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
         <members>ChexSystemsGeneratePasswordController</members>

@@ -1,5 +1,6 @@
 <apex:page >
 	<apex:outputLabel value="{!$Label.atbk__no_read_access}" rendered="false" />
+	<!-- test -->
 	<apex:outputLabel value="{!$Label.atbk__reserve_core_button}" rendered="false" />
 	<apex:outputLabel value="{!$Label.atbk__reserved_core_number_label}" rendered="false" />
 	<apex:outputLabel value="{!$Label.atbk__reserve_message_partial}" rendered="false" />
