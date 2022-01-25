@@ -105,6 +105,7 @@
         <name>ApexEmailNotifications</name>
     </types>
     <types>
+        <members>ATBK__Labels</members>
         <members>AnswersHome</members>
         <members>BandwidthExceeded</members>
         <members>ChangePassword</members>
