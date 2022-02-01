@@ -6,6 +6,7 @@
         <name>AnimationRule</name>
     </types>
     <types>
+        <members>BotField</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
         <members>ChexSystemsGeneratePasswordController</members>
@@ -268,6 +269,7 @@
     <types>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
+        <members>Account.Active__c</members>
         <members>Account.AnnualRevenue</members>
         <members>Account.BillingAddress</members>
         <members>Account.Billing_Address__c</members>
@@ -3942,6 +3944,7 @@
     </types>
     <types>
         <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
         <members>Chatter External User</members>
         <members>Chatter Free User</members>
         <members>Chatter Moderator User</members>
