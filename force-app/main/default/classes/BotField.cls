@@ -8,7 +8,7 @@ public class BotField {
         this.name = name;
         this.value = value;
     }
-    
+    /* New EZ-Commit */
     public BotField(String name, String value, string linkURL) {
         this.name = name;
         this.value = value;
