@@ -1,0 +1,34 @@
+[
+  {
+    "name": "LLC_BI__Role__c",
+    "lookupobjfieldmap": {
+      "LLC_BI__Team_Member__c": "LLC_BI__Role__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "LLC_BI__Team__c",
+    "lookupobjfieldmap": {
+      "LLC_BI__Team_Member__c": "LLC_BI__Team__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "LLC_BI__Team_Member__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "llc_bi__user__c",
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  }
+]

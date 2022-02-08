@@ -9,7 +9,7 @@ packageDirectories:
           standardFeature: false
           versions:
             Fall 2019:
-              modifiedDate: '2022-02-08 00:02:32'
+              modifiedDate: '2022-02-08 00:48:43'
         01c1aM0Q-UITest:
           path: dataset/01c1aM0Q-UITest
           prefix: Republic
@@ -17,3 +17,10 @@ packageDirectories:
           versions:
             '11':
               modifiedDate: '2022-02-08 00:35:48'
+        01c1aM0Q-Teams:
+          path: dataset/01c1aM0Q-Teams
+          prefix: ncino
+          standardFeature: false
+          versions:
+            Fall 2019:
+              modifiedDate: '2022-02-08 00:48:43'

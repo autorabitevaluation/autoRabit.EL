@@ -1,0 +1,59 @@
+{
+  "name": "1_LLC_BI__Team__c",
+  "attributes": [
+    "Id",
+    "OwnerId",
+    "IsDeleted",
+    "Name",
+    "CreatedDate",
+    "CreatedById",
+    "LastModifiedDate",
+    "LastModifiedById",
+    "SystemModstamp",
+    "LastActivityDate",
+    "LastViewedDate",
+    "LastReferencedDate",
+    "ConnectionReceivedId",
+    "ConnectionSentId",
+    "LLC_BI__Description__c",
+    "LLC_BI__lookupKey__c"
+  ],
+  "records": {
+    "1": {
+      "ConnectionReceivedId": "",
+      "ConnectionSentId": "",
+      "CreatedById": "0055f000004XdsRAAS",
+      "CreatedDate": "2021-11-10T13:29:22.000Z",
+      "Id": "a1r5f000000kmA3AAI",
+      "IsDeleted": "",
+      "LLC_BI__Description__c": "",
+      "LLC_BI__lookupKey__c": "",
+      "LastActivityDate": "",
+      "LastModifiedById": "0055f000004XdsRAAS",
+      "LastModifiedDate": "2021-11-10T13:29:22.000Z",
+      "LastReferencedDate": "",
+      "LastViewedDate": "",
+      "Name": "Loan Officer 1",
+      "OwnerId": "0055f000004XdsRAAS",
+      "SystemModstamp": ""
+    },
+    "2": {
+      "ConnectionReceivedId": "",
+      "ConnectionSentId": "",
+      "CreatedById": "0055f000004XdsRAAS",
+      "CreatedDate": "2021-11-10T13:29:22.000Z",
+      "Id": "a1r5f000000kmA2AAI",
+      "IsDeleted": "",
+      "LLC_BI__Description__c": "",
+      "LLC_BI__lookupKey__c": "42279254382261736",
+      "LastActivityDate": "",
+      "LastModifiedById": "0055f000004XdsRAAS",
+      "LastModifiedDate": "2021-11-10T13:29:22.000Z",
+      "LastReferencedDate": "",
+      "LastViewedDate": "",
+      "Name": "Gervasi - Loan Team",
+      "OwnerId": "0055f000004XdsRAAS",
+      "SystemModstamp": ""
+    }
+  }
+}
