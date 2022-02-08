@@ -10,3 +10,10 @@ packageDirectories:
           versions:
             Fall 2019:
               modifiedDate: '2022-02-08 00:02:32'
+        01c1aM0Q-UITest:
+          path: dataset/01c1aM0Q-UITest
+          prefix: Republic
+          standardFeature: false
+          versions:
+            '11':
+              modifiedDate: '2022-02-08 00:30:56'

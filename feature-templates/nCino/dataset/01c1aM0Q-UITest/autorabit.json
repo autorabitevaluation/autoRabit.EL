@@ -1,0 +1,15 @@
+{
+  "prefix": "Republic",
+  "packageDirectories": {
+    "11": {
+      "metadata": {
+        "exclude": {
+          "CustomObject": []
+        }
+      },
+      "data": {
+        "exclude": {}
+      }
+    }
+  }
+}

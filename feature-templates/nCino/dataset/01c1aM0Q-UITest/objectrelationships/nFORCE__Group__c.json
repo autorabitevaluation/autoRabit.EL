@@ -1,0 +1,11 @@
+[
+  {
+    "name": "nFORCE__Group__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  }
+]
