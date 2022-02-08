@@ -1,0 +1,4 @@
+{
+  "name": "nFORMS__Form_Template__c",
+  "query": "Select Id From nFORMS__Form_Template__c Where (  nFORMS__Is_Active__c \u003d true  )"
+}
