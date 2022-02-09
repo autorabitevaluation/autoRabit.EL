@@ -2427,6 +2427,7 @@
         <members>Task.Type</members>
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
+        <members>Test1Object__c.Test1Field__c</members>
         <members>User.Edit_Booked_Loans_Permission__c</members>
         <members>User.Is_nCino_User__c</members>
         <members>User.LLC_BI__Mortgage_License_State__c</members>
@@ -2923,6 +2924,7 @@
         <members>StreamActivityAccess</members>
         <members>StreamingChannel</members>
         <members>Task</members>
+        <members>Test1Object__c</members>
         <members>Topic</members>
         <members>TopicAssignment</members>
         <members>User</members>
