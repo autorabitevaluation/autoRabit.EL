@@ -86,6 +86,7 @@
         <members>UserInterfaceRecordOwnerUtility</members>
         <members>UserInterfaceRecordOwnerUtilityTest</members>
         <members>WorkflowAuditEventUtility</members>
+        <members>test1</members>
         <name>ApexClass</name>
     </types>
     <types>
