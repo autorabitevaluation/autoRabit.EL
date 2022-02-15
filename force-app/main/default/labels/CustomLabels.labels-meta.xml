@@ -49,6 +49,13 @@
         <value>https://c.na135.content.force.com/servlet/servlet.ImageServer?id=0154S0000000u1Y&amp;oid=00D4S000000Emzh&amp;lastMod=1599235480000</value>
     </labels>
     <labels>
+        <fullName>FRB_Test</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FRB_Test</shortDescription>
+        <value>Testing from dev org 1</value>
+    </labels>
+    <labels>
         <fullName>Link_to_Portal_Dashboard</fullName>
         <categories>Online Application</categories>
         <language>en_US</language>
@@ -62,9 +69,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>NewLine</shortDescription>
-        <value>&quot;
-
-&quot;</value>
+        <value>&quot;</value>
     </labels>
     <labels>
         <fullName>PendingBooking_Header_cm</fullName>
@@ -113,6 +118,13 @@
         <protected>false</protected>
         <shortDescription>PortalPendingBusinessInfoSubHeader2</shortDescription>
         <value>We are currently processing your information. A member from our customer care team will reach out within 1-2 business days. If you have any questions, please feel free to contact us at 123-456-6789 or email contactCenter@bank.com. Thanks!</value>
+    </labels>
+    <labels>
+        <fullName>Test</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Test</shortDescription>
+        <value>NONE</value>
     </labels>
     <labels>
         <fullName>X_MISSING_REQUIRED_PROPERTY</fullName>

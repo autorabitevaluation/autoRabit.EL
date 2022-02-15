@@ -1,0 +1,12 @@
+!!com.rabit.featuremigration.beans.vcstructure.ConfigManifest
+packageDirectories:
+  packagePaths:
+    dataset:
+      features:
+        019DqP0P-FormsManager1:
+          path: dataset/019DqP0P-FormsManager1
+          prefix: Republic
+          standardFeature: false
+          versions:
+            '1':
+              modifiedDate: '2022-02-08 21:08:51'
