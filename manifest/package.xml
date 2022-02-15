@@ -7,6 +7,7 @@
     </types>
     <types>
         <members>ATBK__ApplicationBookingStrategy</members>
+        <members>BotController</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
         <members>ChexSystemsGeneratePasswordController</members>
