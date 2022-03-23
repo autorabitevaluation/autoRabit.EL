@@ -1,0 +1,14 @@
+{
+  "buckets": [
+    {
+      "objects": [
+        "LLC_BI__Role__c",
+        "LLC_BI__Team_Member__c",
+        "LLC_BI__Team__c"
+      ],
+      "bucketNum": 1,
+      "clauseField": "nFORCE_lookupKey_c",
+      "entryObject": "LLC_BI__Team__c"
+    }
+  ]
+}

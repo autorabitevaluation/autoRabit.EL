@@ -1,0 +1,3 @@
+"Id","OwnerId","IsDeleted","Name","CreatedDate","CreatedById","LastModifiedDate","LastModifiedById","SystemModstamp","LastActivityDate","LastViewedDate","LastReferencedDate","ConnectionReceivedId","ConnectionSentId","LLC_BI__Description__c","LLC_BI__Type__c","LLC_BI__lookupKey__c"
+"a1n5f000000yDO9AAM","0055f000004XdsRAAS","","Processing","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","","","","","","","","Team_Member__c","42183286177656768"
+"a1n5f000000yDOAAA2","0055f000004XdsRAAS","","Credit Analyst / Underwriter","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","","","","","","","","TEAM_ROLES","a1n5f000000yDOAAA2"

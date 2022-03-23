@@ -1,0 +1,128 @@
+[
+  {
+    "name": "nFORCE__Widget__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Screen_Section__c": "nFORCE__Widget__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Screen__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Screen_Section__c": "nFORCE__Screen__c",
+      "nFORCE__Group__c": "nFORCE__Screen__c",
+      "nFORCE__Route__c": "nFORCE__Screen__c",
+      "nFORCE__Screen_Segment__c": "nFORCE__Screen__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Screen_Section__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Screen_Section__c": "nFORCE__Parent_Screen_Section__c",
+      "nFORCE__Section_Configuration__c": "nFORCE__Screen_Section__c",
+      "nFORCE__Screen_Segment__c": "nFORCE__Screen_Section__c",
+      "nFORCE__Field_Configuration__c": "nFORCE__Screen_Section__c"
+    },
+    "recordtypeidmap": {},
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Group__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Route_Group__c": "nFORCE__Group__c,nFORCE__Question_Group__c",
+      "nFORCE__Group__c": "nFORCE__Parent_Group__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Route__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Route_Group__c": "nFORCE__Parent_Route__c,nFORCE__Route__c",
+      "nFORCE__Route_Terms__c": "nFORCE__Route__c",
+      "nFORCE__Field_Configuration__c": "nFORCE__Route__c",
+      "nFORCE__Route_Tile__c": "nFORCE__Route__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Screen_Segment__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Tile__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Route_Tile__c": "nFORCE__Tile__c"
+    },
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Route_Group__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Section_Configuration__c",
+    "lookupobjfieldmap": {
+      "nFORCE__Section_Configuration__c": "nFORCE__Parent_Configuration__c"
+    },
+    "recordtypeidmap": {},
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Route_Terms__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Field_Configuration__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  },
+  {
+    "name": "nFORCE__Route_Tile__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  }
+]

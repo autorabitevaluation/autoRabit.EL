@@ -1,5 +1,5 @@
 /**
- * Class containing tests for SiteRegisterController
+ * Class containing tests for SiteRegisterController - Test for AutoRabit
  */
 @IsTest public with sharing class SiteRegisterControllerTest {
     @IsTest(SeeAllData=true) static void testRegistration() {
