@@ -1,0 +1,4 @@
+{
+  "name": "nFORMS__Form_Template__c",
+  "query": "Select Id From nFORMS__Form_Template__c Where ( Id !\u003d  null and nFORMS__lookupKey__c !\u003d \u0027null\u0027 )"
+}

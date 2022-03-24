@@ -1,0 +1,11 @@
+[
+  {
+    "name": "nFORMS__Form_Template__c",
+    "lookupobjfieldmap": {},
+    "recordtypeidmap": {},
+    "userlookupfields": [
+      "ownerid"
+    ],
+    "objectsetnum": 0
+  }
+]
