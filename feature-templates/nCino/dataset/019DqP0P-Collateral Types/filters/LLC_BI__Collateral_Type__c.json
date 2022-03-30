@@ -1,0 +1,4 @@
+{
+  "name": "LLC_BI__Collateral_Type__c",
+  "query": "Select Id From LLC_BI__Collateral_Type__c Where ( Id !\u003d  null and LLC_BI__lookupKey__c !\u003d \u0027null\u0027 )"
+}

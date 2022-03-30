@@ -17,3 +17,10 @@ packageDirectories:
           versions:
             Fall 2019:
               modifiedDate: '2022-03-24 21:46:39'
+        019DqP0P-Collateral Types:
+          path: dataset/019DqP0P-Collateral Types
+          prefix: ncino
+          standardFeature: false
+          versions:
+            Fall 2019:
+              modifiedDate: '2022-03-30 17:29:29'

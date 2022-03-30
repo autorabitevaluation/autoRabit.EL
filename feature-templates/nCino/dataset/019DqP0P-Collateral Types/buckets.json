@@ -1,0 +1,16 @@
+{
+  "buckets": [
+    {
+      "objects": [
+        "LLC_BI__Collateral_Type__c",
+        "LLC_BI__Product_Collateral_Type__c",
+        "nFORCE__Screen_Section__c",
+        "nFORCE__Section_Configuration__c",
+        "nFORCE__Screen__c"
+      ],
+      "bucketNum": 1,
+      "clauseField": "nFORCE_lookupKey_c",
+      "entryObject": "LLC_BI__Collateral_Type__c"
+    }
+  ]
+}
