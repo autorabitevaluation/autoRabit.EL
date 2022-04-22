@@ -1,0 +1,12 @@
+{
+  "buckets": [
+    {
+      "objects": [
+        "nFORCE__Screen_Section__c"
+      ],
+      "bucketNum": 1,
+      "clauseField": "nFORCE_lookupKey_c",
+      "entryObject": "nFORCE__Screen_Section__c"
+    }
+  ]
+}

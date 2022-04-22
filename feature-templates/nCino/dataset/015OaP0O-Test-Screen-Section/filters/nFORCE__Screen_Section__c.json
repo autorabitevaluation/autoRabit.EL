@@ -1,0 +1,4 @@
+{
+  "name": "nFORCE__Screen_Section__c",
+  "query": "Select Id From nFORCE__Screen_Section__c Where ( Id \u003d \u0027a2F5500000QgvE3EAJ\u0027 )"
+}
