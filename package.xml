@@ -975,6 +975,7 @@
     </types>
     <types>
         <members>ATBK__ApplicationBookingStrategy</members>
+        <members>AutoCreateRegHandlerTest</members>
         <members>BotField</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
