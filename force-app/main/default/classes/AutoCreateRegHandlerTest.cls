@@ -1,6 +1,6 @@
 /***************
 ** History**
-** update **
+** update 6th June **
 
 *******************/
 
@@ -413,8 +413,11 @@ private class AutoCreateRegHandlerTest {
     }
     static testMethod void testCreateAutoRabit(){}
     
-   @istest
-    static void TestARmethod(){
+
+    
+    @istest
+    static void T2DevworkOnSameClass(){
     //some test logic
+    //Some assert statement
     }
 }
