@@ -413,11 +413,20 @@ private class AutoCreateRegHandlerTest {
     }
     static testMethod void testCreateAutoRabit(){}
     
-
+   @istest
+    static void TestARmethod(){
+    //some test logic
+    //test line 2
+    }
+     @istest
+    static void TestARmethodT(){
+    //some test logic
+    //test line 2
+    }
     
     @istest
     static void T2DevworkOnSameClass(){
     //some test logic
-    //Some assert statement
+    
     }
 }
