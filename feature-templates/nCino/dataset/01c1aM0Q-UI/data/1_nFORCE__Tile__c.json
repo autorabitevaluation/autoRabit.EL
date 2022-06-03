@@ -1,0 +1,56 @@
+{
+  "name": "1_nFORCE__Tile__c",
+  "attributes": [
+    "Id",
+    "OwnerId",
+    "IsDeleted",
+    "Name",
+    "CreatedDate",
+    "CreatedById",
+    "LastModifiedDate",
+    "LastModifiedById",
+    "SystemModstamp",
+    "ConnectionReceivedId",
+    "ConnectionSentId",
+    "nFORCE__Body__c",
+    "nFORCE__Header__c",
+    "nFORCE__Icon_Path__c",
+    "nFORCE__lookupKey__c"
+  ],
+  "records": {
+    "1": {
+      "ConnectionReceivedId": "",
+      "ConnectionSentId": "",
+      "CreatedById": "0055f000004XdsRAAS",
+      "CreatedDate": "2021-11-10T13:29:22.000Z",
+      "Id": "a3X5f000000xyOJEAY",
+      "IsDeleted": "",
+      "LastModifiedById": "0055f000004XdsRAAS",
+      "LastModifiedDate": "2021-11-10T13:29:22.000Z",
+      "Name": "Income Disclaimer",
+      "OwnerId": "0055f000004XdsRAAS",
+      "SystemModstamp": "",
+      "nFORCE__Body__c": "\u003cp style\u003d\"text-align: center;\"\u003e\u003cspan style\u003d\"color: rgb(68, 68, 68);\"\u003eNote: You are not legally required to provide income details from Alimony or Child Support if you do not want it considered in determining your creditworthiness.\u003c/span\u003e\u003c/p\u003e",
+      "nFORCE__Header__c": "",
+      "nFORCE__Icon_Path__c": "utility-sprite/svg/symbols.svg#info",
+      "nFORCE__lookupKey__c": "42629667351181365"
+    },
+    "2": {
+      "ConnectionReceivedId": "",
+      "ConnectionSentId": "",
+      "CreatedById": "0055f000004XdsRAAS",
+      "CreatedDate": "2021-11-10T13:29:22.000Z",
+      "Id": "a3X5f000000xyOHEAY",
+      "IsDeleted": "",
+      "LastModifiedById": "0055f000004XdsRAAS",
+      "LastModifiedDate": "2021-11-10T13:29:22.000Z",
+      "Name": "USA Patriot Act",
+      "OwnerId": "0055f000004XdsRAAS",
+      "SystemModstamp": "",
+      "nFORCE__Body__c": "To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account.\u003cbr\u003e\u003cbr\u003eWhat this means for you: When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask to see your driver’s license or other identifying documents.\u003cbr\u003e ",
+      "nFORCE__Header__c": "USA Patriot Act",
+      "nFORCE__Icon_Path__c": "",
+      "nFORCE__lookupKey__c": "42942675889941202"
+    }
+  }
+}

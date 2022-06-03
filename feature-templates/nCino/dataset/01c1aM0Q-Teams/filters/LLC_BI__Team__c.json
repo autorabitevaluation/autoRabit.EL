@@ -1,0 +1,4 @@
+{
+  "name": "LLC_BI__Team__c",
+  "query": "Select Id From LLC_BI__Team__c Where ( Id !\u003d  null )"
+}
