@@ -977,6 +977,7 @@
         <members>ATBK__ApplicationBookingStrategy</members>
         <members>Arpractice</members>
         <members>AutoCreateRegHandlerTest</members>
+        <members>BotController</members>
         <members>BotField</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
@@ -3695,6 +3696,7 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>FRB_CLM_Sales_Promo__c.Bonus_Amount__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>IdentityDocument.ExpirationDate</members>
