@@ -3698,6 +3698,7 @@
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
         <members>FRB_CLM_Sales_Promo__c.Bonus_Amount__c</members>
+        <members>FRB_CLM_Sales_Promo__c.Greater_than_1000__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>IdentityDocument.ExpirationDate</members>
