@@ -3966,6 +3966,7 @@
         <name>Portal</name>
     </types>
     <types>
+        <members>API Profile</members>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>
         <members>Chatter External User</members>
