@@ -1351,6 +1351,8 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>FRB_CLM_Avoka_Survey__c.FRB_CLM_Person_Account__c</members>
+        <members>FRB_CLM_Avoka_Survey__c.survey_question__c</members>
         <members>FRB_CLM_Sales_Promo__c.Bonus_Amount__c</members>
         <members>FRB_CLM_Sales_Promo__c.Greater_than_1000__c</members>
         <members>Idea.Categories</members>
@@ -2848,6 +2850,7 @@
         <members>ExpressionFilter</members>
         <members>ExpressionFilterCriteria</members>
         <members>ExternalEventMapping</members>
+        <members>FRB_CLM_Avoka_Survey__c</members>
         <members>FeedItem</members>
         <members>Idea</members>
         <members>IdentityDocument</members>
@@ -3794,6 +3797,7 @@
         <members>Event.MyTeamsUpcomingEvents</members>
         <members>Event.MyUpcomingEvents</members>
         <members>Event.TodaysAgenda</members>
+        <members>FRB_CLM_Avoka_Survey__c.All</members>
         <members>Idea.Ideas_Last_7_Days</members>
         <members>Idea.LLC_BI__Ideas_Last_7_Days</members>
         <members>IdentityDocument.All_IdentityDocuments</members>
