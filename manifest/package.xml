@@ -1432,6 +1432,7 @@
         <members>Customer Portal Manager Custom</members>
         <members>Customer Portal Profile</members>
         <members>FRB SLR User</members>
+        <members>FRB System Administrator</members>
         <members>Guest</members>
         <members>Guest License User</members>
         <members>Identity User</members>

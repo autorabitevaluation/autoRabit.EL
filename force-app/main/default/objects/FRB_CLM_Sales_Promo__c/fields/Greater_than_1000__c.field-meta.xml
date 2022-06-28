@@ -3,7 +3,7 @@
     <fullName>Greater_than_1000__c</fullName>
     <defaultValue>false</defaultValue>
     <externalId>false</externalId>
-    <label>Greater than 1000</label>
+    <label>Greater than 1000?</label>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
