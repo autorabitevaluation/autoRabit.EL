@@ -1,0 +1,23 @@
+{
+  "buckets": [
+    {
+      "objects": [
+        "nFORCE__Route_Group__c",
+        "nFORCE__Group__c",
+        "nFORCE__Section_Configuration__c",
+        "nFORCE__Screen__c",
+        "nFORCE__Route_Terms__c",
+        "nFORCE__Route__c",
+        "nFORCE__Screen_Segment__c",
+        "nFORCE__Field_Configuration__c",
+        "nFORCE__Route_Tile__c",
+        "nFORCE__Tile__c",
+        "nFORCE__Screen_Section__c",
+        "nFORCE__Widget__c"
+      ],
+      "bucketNum": 1,
+      "clauseField": "nFORCE_lookupKey_c",
+      "entryObject": "nFORCE__Group__c"
+    }
+  ]
+}
