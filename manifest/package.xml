@@ -6,6 +6,11 @@
         <name>AnimationRule</name>
     </types>
     <types>
+        <members>ATBK__ApplicationBookingStrategy</members>
+        <members>Arpractice</members>
+        <members>AutoCreateRegHandlerTest</members>
+        <members>BotController</members>
+        <members>BotField</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
         <members>ChexSystemsGeneratePasswordController</members>
@@ -29,6 +34,7 @@
         <members>EquifaxPerformObtainReport</members>
         <members>EquifaxSendService</members>
         <members>FISChexHTMLRendererController</members>
+        <members>FRB_CLM_RoundRobin</members>
         <members>FisChexCalloutBase</members>
         <members>FisChexCreditActivator</members>
         <members>FisChexCreditAppFacade</members>
@@ -85,6 +91,7 @@
         <members>UserInterfaceRecordOwnerUtility</members>
         <members>UserInterfaceRecordOwnerUtilityTest</members>
         <members>WorkflowAuditEventUtility</members>
+        <members>test1</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -105,6 +112,7 @@
         <name>ApexEmailNotifications</name>
     </types>
     <types>
+        <members>ATBK__Labels</members>
         <members>AnswersHome</members>
         <members>BandwidthExceeded</members>
         <members>ChangePassword</members>
@@ -268,7 +276,9 @@
     <types>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
+        <members>Account.Active__c</members>
         <members>Account.AnnualRevenue</members>
+        <members>Account.Auto_Rabbit_POC__c</members>
         <members>Account.BillingAddress</members>
         <members>Account.Billing_Address__c</members>
         <members>Account.Business_Mailing_Address_Same_as_Physica__c</members>
@@ -707,6 +717,9 @@
         <members>CampaignMember.Status</members>
         <members>CampaignMember.Street</members>
         <members>CampaignMember.Title</members>
+        <members>Candidate_AR__c.Experience__c</members>
+        <members>Candidate_AR__c.Phone__c</members>
+        <members>Candidate_AR__c.Technology__c</members>
         <members>Case.AccountId</members>
         <members>Case.AssetId</members>
         <members>Case.BusinessHoursId</members>
@@ -1338,6 +1351,10 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>FRB_CLM_Avoka_Survey__c.FRB_CLM_Person_Account__c</members>
+        <members>FRB_CLM_Avoka_Survey__c.survey_question__c</members>
+        <members>FRB_CLM_Sales_Promo__c.Bonus_Amount__c</members>
+        <members>FRB_CLM_Sales_Promo__c.Greater_than_1000__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>IdentityDocument.ExpirationDate</members>
@@ -2425,6 +2442,7 @@
         <members>Task.Type</members>
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
+        <members>Test1Object__c.Test1Field__c</members>
         <members>User.Edit_Booked_Loans_Permission__c</members>
         <members>User.Is_nCino_User__c</members>
         <members>User.LLC_BI__Mortgage_License_State__c</members>
@@ -2548,6 +2566,7 @@
         <members>ChexSystemsReminderPriority</members>
         <members>ChexSystemsReminderSubject</members>
         <members>Custom_Email_Template_Logo</members>
+        <members>FRB_Test</members>
         <members>Link_to_Portal_Dashboard</members>
         <members>NewLine</members>
         <members>PendingBooking_Header_cm</members>
@@ -2556,6 +2575,7 @@
         <members>PendingCoOwnersSubHeader_cm</members>
         <members>PortalPendingBusinessInfoHeader1_cm</members>
         <members>PortalPendingBusinessInfoSubHeader2_cm</members>
+        <members>Test</members>
         <members>X_MISSING_REQUIRED_PROPERTY</members>
         <members>X_MISSING_UNKNOWN_REPORT_TYPE</members>
         <members>X_PRODUCT_LIMIT_EXCEEDED</members>
@@ -2777,6 +2797,7 @@
         <members>BusinessProfile</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
+        <members>Candidate_AR__c</members>
         <members>Case</members>
         <members>CaseContactRole</members>
         <members>CaseGatewayRequest</members>
@@ -2829,6 +2850,7 @@
         <members>ExpressionFilter</members>
         <members>ExpressionFilterCriteria</members>
         <members>ExternalEventMapping</members>
+        <members>FRB_CLM_Avoka_Survey__c</members>
         <members>FeedItem</members>
         <members>Idea</members>
         <members>IdentityDocument</members>
@@ -2919,6 +2941,7 @@
         <members>StreamActivityAccess</members>
         <members>StreamingChannel</members>
         <members>Task</members>
+        <members>Test1Object__c</members>
         <members>Topic</members>
         <members>TopicAssignment</members>
         <members>User</members>
@@ -3554,6 +3577,7 @@
         <members>BusinessProfile-Business Profile Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Candidate_AR__c-Candidate AR Layout</members>
         <members>Case-Case Layout</members>
         <members>Case-Converted%3A Case Feed Layout</members>
         <members>CaseClose-Close Case Layout</members>
@@ -3773,6 +3797,7 @@
         <members>Event.MyTeamsUpcomingEvents</members>
         <members>Event.MyUpcomingEvents</members>
         <members>Event.TodaysAgenda</members>
+        <members>FRB_CLM_Avoka_Survey__c.All</members>
         <members>Idea.Ideas_Last_7_Days</members>
         <members>Idea.LLC_BI__Ideas_Last_7_Days</members>
         <members>IdentityDocument.All_IdentityDocuments</members>
@@ -3941,7 +3966,9 @@
         <name>Portal</name>
     </types>
     <types>
+        <members>API Profile</members>
         <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
         <members>Chatter External User</members>
         <members>Chatter Free User</members>
         <members>Chatter Moderator User</members>
@@ -3954,6 +3981,8 @@
         <members>Customer Portal Document Uploader User</members>
         <members>Customer Portal Manager Custom</members>
         <members>Customer Portal Profile</members>
+        <members>FRB SLR User</members>
+        <members>FRB System Administrator</members>
         <members>Guest</members>
         <members>Guest License User</members>
         <members>Identity User</members>
@@ -4944,6 +4973,7 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>Account.zipcode_change_for_AutoRabit</members>
         <members>Contact.Deposit_Declined</members>
         <members>Opportunity.LLC_BI__Close_Date_Moved</members>
         <members>Opportunity.LLC_BI__Guarantee_Fee_Not_Paid</members>
@@ -4987,6 +5017,7 @@
         <members>Account.LLC_BI__Account Set Lender Record Type</members>
         <members>Account.LLC_BI__Set Default App for Lenders</members>
         <members>Account.Set Default App-Master Relationship</members>
+        <members>Account.Test for AutoRabit</members>
         <members>Contact.Contact- Mailing Address Sync</members>
         <members>Contact.LLC_BI__Contact Set Business Record Type</members>
         <members>Contact.LLC_BI__Contact Set Individual Record Type</members>

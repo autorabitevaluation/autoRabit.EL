@@ -1,0 +1,40 @@
+!!com.rabit.featuremigration.beans.vcstructure.ConfigManifest
+packageDirectories:
+  packagePaths:
+    dataset:
+      features:
+        01c1aM0Q-UI:
+          path: dataset/01c1aM0Q-UI
+          prefix: ncino
+          standardFeature: false
+          versions:
+            Fall 2019:
+              modifiedDate: '2022-02-08 00:48:43'
+        01c1aM0Q-UITest:
+          path: dataset/01c1aM0Q-UITest
+          prefix: Republic
+          standardFeature: false
+          versions:
+            '11':
+              modifiedDate: '2022-02-08 00:35:48'
+        01c1aM0Q-Teams:
+          path: dataset/01c1aM0Q-Teams
+          prefix: ncino
+          standardFeature: false
+          versions:
+            Fall 2019:
+              modifiedDate: '2022-02-08 00:48:43'
+        01c1aM0Q-FormsManager1:
+          path: dataset/01c1aM0Q-FormsManager1
+          prefix: Republic
+          standardFeature: false
+          versions:
+            '1':
+              modifiedDate: '2022-02-08 20:53:44'
+        015OaP0O-Test-Screen-Section:
+          path: dataset/015OaP0O-Test-Screen-Section
+          prefix: ncino12
+          standardFeature: false
+          versions:
+            '1':
+              modifiedDate: '2022-04-22 00:04:42'

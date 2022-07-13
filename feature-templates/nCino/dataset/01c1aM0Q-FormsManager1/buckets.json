@@ -1,0 +1,12 @@
+{
+  "buckets": [
+    {
+      "objects": [
+        "nFORMS__Form_Template__c"
+      ],
+      "bucketNum": 1,
+      "clauseField": "nFORCE_lookupKey_c",
+      "entryObject": "nFORMS__Form_Template__c"
+    }
+  ]
+}

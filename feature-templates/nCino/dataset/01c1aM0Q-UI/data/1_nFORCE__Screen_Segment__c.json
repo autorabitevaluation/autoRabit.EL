@@ -1,0 +1,59 @@
+{
+  "name": "1_nFORCE__Screen_Segment__c",
+  "attributes": [
+    "Id",
+    "OwnerId",
+    "IsDeleted",
+    "Name",
+    "CreatedDate",
+    "CreatedById",
+    "LastModifiedDate",
+    "LastModifiedById",
+    "SystemModstamp",
+    "ConnectionReceivedId",
+    "ConnectionSentId",
+    "nFORCE__Order__c",
+    "nFORCE__Screen_Section__c",
+    "nFORCE__Screen__c",
+    "nFORCE__Type__c",
+    "nFORCE__lookupKey__c"
+  ],
+  "records": {
+    "1": {
+      "ConnectionReceivedId": "",
+      "ConnectionSentId": "",
+      "CreatedById": "0055f000004XdsRAAS",
+      "CreatedDate": "2021-11-10T13:29:22.000Z",
+      "Id": "a3v5f000000optDAAQ",
+      "IsDeleted": "",
+      "LastModifiedById": "0055f000004XdsRAAS",
+      "LastModifiedDate": "2021-11-10T13:29:22.000Z",
+      "Name": "a3v5f000000optD",
+      "OwnerId": "0055f000004XdsRAAS",
+      "SystemModstamp": "",
+      "nFORCE__Order__c": "0.0",
+      "nFORCE__Screen_Section__c": "a2F5f000000xiRpEAI",
+      "nFORCE__Screen__c": "a2G5f000000xapnEAA",
+      "nFORCE__Type__c": "",
+      "nFORCE__lookupKey__c": "a3v5f000000optDAAQ"
+    },
+    "2": {
+      "ConnectionReceivedId": "",
+      "ConnectionSentId": "",
+      "CreatedById": "0055f000004XdsRAAS",
+      "CreatedDate": "2021-11-10T13:29:22.000Z",
+      "Id": "a3v5f000000optEAAQ",
+      "IsDeleted": "",
+      "LastModifiedById": "0055f000004XdsRAAS",
+      "LastModifiedDate": "2021-11-10T13:29:22.000Z",
+      "Name": "a3v5f000000optE",
+      "OwnerId": "0055f000004XdsRAAS",
+      "SystemModstamp": "",
+      "nFORCE__Order__c": "1.0",
+      "nFORCE__Screen_Section__c": "a2F5f000000xiRoEAI",
+      "nFORCE__Screen__c": "a2G5f000000xapnEAA",
+      "nFORCE__Type__c": "",
+      "nFORCE__lookupKey__c": "a3v5f000000optEAAQ"
+    }
+  }
+}

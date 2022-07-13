@@ -1,0 +1,3 @@
+"Id","OwnerId","IsDeleted","Name","CreatedDate","CreatedById","LastModifiedDate","LastModifiedById","SystemModstamp","LastActivityDate","LastViewedDate","LastReferencedDate","ConnectionReceivedId","ConnectionSentId","LLC_BI__Description__c","LLC_BI__lookupKey__c"
+"a1r5f000000kmA2AAI","0055f000004XdsRAAS","","Gervasi - Loan Team","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","","","","","","","","42279254382261736"
+"a1r5f000000kmA3AAI","0055f000004XdsRAAS","","Loan Officer 1","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","2021-11-10T13:29:22.000Z","0055f000004XdsRAAS","","","","","","","",""
